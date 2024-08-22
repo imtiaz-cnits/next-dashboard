@@ -21,15 +21,16 @@
 }
 
 body {
+  background: #feffff;
   background: #14181b;
 }
 
 /* START FORM SECTION  */
 #form {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #14181b;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 .formColOne {
   min-height: 80vh;
@@ -41,9 +42,9 @@ body {
 }
 
 .formColWrapperOne {
-  width: 360px;
-  height: 440px;
-  padding: 40px;
+  width: 500px;
+  height:570px;
+  padding: 35px;
   border-radius: 12px;
   background: #1d2126;
   position: relative;
@@ -51,54 +52,10 @@ body {
   transition: 0.8s ease-in-out;
 }
 
-form::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 102%;
-  padding: 40px;
-  border-radius: 12px;
-  background: #00ffdd;
-  z-index: -1;
-  transition: 0.8s ease-in-out;
-  width: 102%;
-  visibility: hidden;
-}
-form::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 102%;
-  padding: 0px;
-  border-radius: 12px;
-  background: #d4470f;
-  z-index: -1;
-  transition: 0.8s ease-in-out;
-  width: 102%;
-  visibility: hidden;
-}
-.formColWrapperOne:hover form::before {
-  cursor: pointer;
-  transform: rotate(-5deg);
-  display: block;
-  transition: 0.8s ease-in-out;
-  visibility: visible;
-}
-.formColWrapperOne:hover form::after {
-  cursor: pointer;
-  transform: rotate(5deg);
-  display: block;
-  transition: 0.4s ease-in-out;
-  visibility: visible;
-}
 
 .formheadingtext h1 {
   color: var(--primary-color);
-  font-size: clamp(25px, 4vw, 30px);
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 41.6px */
@@ -122,8 +79,8 @@ form::after {
   border-radius: 6px;
   font-size: 15px;
   padding: 13px 20px;
-  border: 2px solid #42dbc9;
-  border-radius: 15px;
+  /* border: 2px solid #42dbc9; */
+  border-radius: 10px;
   background: var(--common-white);
   color: var(--common-white);
   outline: none;
@@ -213,9 +170,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.switchBttn label {
+.switchBttn .rememberText {
   color: white;
-  margin: 0px 0px 0px 10px;
+  margin: 1px 0px 0px 10px;
 }
 
 /* start submit button css copy  */
@@ -240,7 +197,7 @@ input:checked + .slider:before {
     rgba(79, 209, 197, 1) 100%
   );
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   /* box-shadow: 5px 4px 24px rgba(79,209,197,.64); */
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
@@ -251,7 +208,7 @@ input:checked + .slider:before {
 
 .button::before {
   content: "";
-  border-radius: 1000px;
+  border-radius: 10px;
   min-width: calc(100% + 5px);
   min-height: calc(40px + 5px);
   border: 4px solid #00ffcb;
@@ -304,7 +261,7 @@ input:checked + .slider:before {
 /* add css  */
 
 .formColTwo {
-  min-height: 80vh;
+  min-height: 90vh;
   display: block;
   display: flex;
   align-items: center;
@@ -320,7 +277,7 @@ input:checked + .slider:before {
 }
 .formContent {
   width: 90%;
-  height: 75%;
+  height: 95%;
   background-color: var(--primary-color);
   position: absolute;
   top: 0px;
@@ -336,26 +293,66 @@ input:checked + .slider:before {
 
 .logoText > p {
   color: #fff;
-  font-size: clamp(30px, 4vw, 40px);
+  font-size: clamp(30px, 4vw, 60px);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 88.176px */
   margin: 20px 0px;
 }
 
+.logoText img {
+  width: 220px;
+}
+
 .formContent img[alt="img"] {
   position: absolute;
   top: 0;
   right: 0;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+
+.switchBttn{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  
+  }
+
+
+/* @media screen and (max-width: 768px) {
   .formColOne,
   .formColWrapperOne {
     width: 100% !important;
   }
+} */
+
+@media screen and (max-width: 992px) {
+  .formColOne{
+    width: 100% !important;
+    display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+    
+  }
+
+  .formColTwo{
+    display: none !important;
+  }
+
+  .input-field, .wrap {
+    margin: 30px 0px  !important;
+  }
+
+  .formColWrapperOne {
+    width: 500px;
+    height:550px;
+    
+  }
+
 }
 
 /* END FORM SECTION  */
