@@ -20,11 +20,12 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: #ff8080;
+  background-color: #d1d1d1;
+  display: flex;
 }
 .container {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 100%;
   min-height: 100vh;
 }
@@ -279,4 +280,38 @@ line-height: 150%; /* 18px */
 }
 .droptext{
   background-color: rgb(105, 105, 105) !important;
+}
+
+
+/* end sidebar section */
+
+.card{
+  width: 100%;
+  height: 220px ;
+  background-color: var(--primary-color) ;
+  margin-top: 50px;
+  border-radius: 12px;
+  position: relative;
+}
+.cardContent{
+  width: 20px;
+  height: 20px ;
+  border: 2px solid ;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardContent::after{
+  content: "";
+  width: 20px;
+  height: 20px ;
+  border: 2px solid ;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: scale(1.5 );
 }

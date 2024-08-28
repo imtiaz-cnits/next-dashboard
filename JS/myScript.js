@@ -14,4 +14,5 @@ $(".menu > ul > li").click(function (e) {
 $(".menu-btn").click(function () {
   // Toggle the 'active' class on the sidebar
   $(".sidebar").toggleClass("active");
+  // $(".sidebar .card").css("display", "none")
 });
