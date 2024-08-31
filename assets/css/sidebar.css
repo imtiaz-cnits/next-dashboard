@@ -11,24 +11,20 @@
   --placholder-color: #a0aec0;
   --common-white: #ffffff;
   --common-black: #000000;
+  --primary-font: Helvetica;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--primary-font) !important;
 }
 body {
   background-color: #d1d1d1;
-  display: flex;
+  /* display: flex; */
 }
-.container {
-  display: flex;
-  align-items: start;
-  width: 100%;
-  min-height: 100vh;
-}
+
 .sidebar {
   position: relative;
   width: 276px;
