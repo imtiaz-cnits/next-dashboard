@@ -21,7 +21,7 @@
   font-family: var(--primary-font) !important;
 }
 .wrapper {
-  background-color: #d1d1d1;
+  background-color: #000000;
   display: flex;
 }
 
@@ -99,6 +99,7 @@
 .menu ul li.active > a {
   color: #000000 !important;
   background-color: #ffffff;
+  z-index: 1000 !important;
 }
 .menu ul li .icon {
   font-size: 20px;
@@ -125,10 +126,12 @@ line-height: 150%; /* 18px */
   padding-left: 20px;
   padding-top: 5px;
   border-left: 1px solid #f6f6f6;
+  
 }
 .menu .sub-menu li a {
   padding: 10px 8px;
   font-size: 12px;
+  
 }
 .menu:not(:last-child) {
   padding-bottom: 10px;
@@ -222,6 +225,7 @@ line-height: 150%; /* 18px */
   border: 1px solid #f6f6f6;
   background-color: #fff;
   box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 /* add css  */
