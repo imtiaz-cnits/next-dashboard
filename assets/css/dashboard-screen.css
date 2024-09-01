@@ -1,0 +1,92 @@
+/* font family  */
+@font-face {
+    font-family: Helvetica;
+    src: url(../font/helvetica-light-587ebe5a59211.ttf);
+  }
+  
+  :root {
+    --primary-color: #4fd1c5;
+    --secondary-color: #718096;
+    --lable-color: #c4c4c4;
+    --placholder-color: #a0aec0;
+    --common-white: #ffffff;
+    --common-black: #000000;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+  }
+
+  /* START HISTORY SECTION */
+#history{
+  width: 99%;
+  margin: auto;
+  /* border: 1px solid #000; */
+}
+.historyText h2 {
+  display: inline !important;
+}
+#historyColWrapper{
+  background-color: white !important;
+  width: 100%;
+  height: auto ;border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 20px ;
+}
+.historyIcon {
+  background-color: var(--primary-color) !important;
+  padding:20px ;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 10px ;
+}
+.historyIcon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.historyText h4 {
+  color: var(--Gray-Gray-400, #A0AEC0);
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+}
+.historyText h2 {
+  color: var(--Gray-Gray-700, #2D3748);
+font-family: Helvetica;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 25.2px */
+}
+.historyText span {
+  color: var(--Green-Green-400, #48BB78);
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 19.6px */
+margin: 0px 6px ;
+}
+.historyText .spanRed {
+  color: var(--Green-Green-400, #f10000);
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 19.6px */
+margin: 0px 6px ;
+}
+
+  /* END HISTORY SECTION */

@@ -1,0 +1,175 @@
+/* font family  */
+@font-face {
+    font-family: Helvetica;
+    src: url(../font/Helvetica.ttf);
+  }
+  
+  :root {
+    --primary-color: #4fd1c5;
+    --secondary-color: #718096;
+    --lable-color: #c4c4c4;
+    --placholder-color: #a0aec0;
+    --common-white: #ffffff;
+    --common-black: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: var(--primary-font) !important;
+    /* border: 1px solid #000; */
+  }
+
+  /* START MAIN NAVBAR SECTION  */
+  #mainNavbar{
+    width:99%;
+    height: 80px ;
+    background: var(--common-black);
+    margin: auto;
+    border-radius: 12px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box !important;
+  }
+  
+  #navbarParent{
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    align-content: center;
+    /* border: 1px solid #000; */
+    justify-content: space-between;
+    margin: 10px 0px ;
+    /* z-index: -1 !important; */
+    /* background-color: red; */
+  }
+ 
+  .childnav ol li a {
+    color: var(--black-amp-white-white, #FFF);
+font-family: Helvetica;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 18px */
+letter-spacing: 1px !important;
+text-decoration: none;
+transition: .2s ease-in-out;
+    
+  } 
+  .childnav  {
+   padding: 0px 10px !important;
+    
+  } 
+  .childnav ol  {
+   margin: 0px 0px 10px !important;
+    
+  } 
+ 
+  .childnav ol span{
+    color: var(--black-amp-white-white, #FFF);
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 18px */
+margin:2px 10px 0px  10px ;
+  } 
+  .childnav ol + p{
+    color: var(--black-amp-white-white, #FFF);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 1px !important;
+  } 
+
+
+  /* copy */
+  
+  .search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 30px;
+    width: 10px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 20px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  /* end copy */
+
+  .navbarContent{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 15px ;
+  }
+
+  .navIcon a  {
+    font-size: 20px ;
+    text-decoration: none;
+    color: var(--common-white);
+    margin: 0px 5px;
+    transition: all .2s ease-in-out;
+  }
+  .navIcon a:hover  {
+    color: var(--primary-color);
+  }
+  .navIcon a i {
+    font-size: 22px ;
+    padding: 0px 5px ;
+  }
+
+  .childnav ol a:hover {
+    color: var(--primary-color);
+  }
+
+  /* END MAIN NAVBAR SECTION  */
