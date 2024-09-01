@@ -20,9 +20,13 @@
   box-sizing: border-box;
   font-family: var(--primary-font) !important;
 }
-body {
+.wrapper {
   background-color: #d1d1d1;
-  /* display: flex; */
+  display: flex;
+}
+
+.main_section {
+  width: 100%;
 }
 
 .sidebar {
