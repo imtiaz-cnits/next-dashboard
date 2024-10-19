@@ -11,6 +11,7 @@
     --placholder-color: #a0aec0;
     --common-white: #ffffff;
     --common-black: #000000;
+    --contentBG-black: #14181B;
   }
   
   * {
@@ -20,21 +21,30 @@
     font-family: Helvetica;
   }
 
+  /* CONTENT */
+  #content{
+    background: var(--contentBG-black)!important;
+    padding: 10px 0 !important;
+    min-height: 100vh !important;
+    /* padding: 15px !important; */
+  }
+/* CONTENT */
+
   /* START CARD SECTION */
 
   #cardContent{
-    width: 99%;
+    width: 100%;
     min-height: 300px;
     /* border: 1px solid #691111; */
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   #cardWrapper > div{
     /* border: 1px solid #000; */
     background: #1D2126;
     width: 400px;
-    height: 350px;
+    min-height: 350px;
     flex-grow: 1;
     border-radius: 12px ;
   }
@@ -44,7 +54,7 @@
    align-content: center;
    justify-content: center;
    flex-wrap: wrap;
-   gap: 30px;
+   gap: 15px;
    
   }
   #cardOne,#cardTwo,#cardThree {
@@ -58,7 +68,7 @@
 font-family: Helvetica;
 font-size: 18px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 140%; /* 25.2px */
   }
   #cardOne p {
@@ -89,12 +99,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */
-  
 }
 .form-switch {
-  
   margin: 5px 0px ;
-  
 }
 
 #cardTwo p {
@@ -150,7 +157,7 @@ line-height: 150%;
 font-family: Helvetica;
 font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 140%; /* 19.6px */
 }
 .contentText p {
@@ -188,7 +195,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   align-content: center;
-  gap: 15px;
+  gap: 8px;
 }
   /* END CARD SECTION */
 
@@ -196,18 +203,18 @@ text-decoration: none;
   /* START PROJECT SECTION */
   
   #project{
-    width: 99%;
+    width: 100%;
     min-height: 450px;
     /* border: 1px solid #691111; */
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
     background: #1D2126;
   }
 
   .projectCardCol{
-    height: 350px;
+    height: 400px;
   }
 
   #projectHeadingText h4 {
@@ -215,7 +222,7 @@ text-decoration: none;
 font-family: Helvetica;
 font-size: 18px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 140%; /* 25.2px */
   }
 #projectHeadingText p {
@@ -223,7 +230,7 @@ line-height: 140%; /* 25.2px */
 font-family: Helvetica;
 font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 150%; /* 15px */
 margin: 10px 0px !important;
   }
@@ -232,7 +239,7 @@ margin: 10px 0px !important;
   #project .card{
     margin: 0 !important;
     background-color: #1D2126 !important;
-    height: 385px !important;
+    height: 400px !important;
     border: none !important;
     /* border: 1px solid white !important; */
     width: 100%;
@@ -252,7 +259,7 @@ line-height: 150%; /* 15px */
     font-family: Helvetica;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 140%; /* 25.2px */
     margin: 10px 0px !important;
   }
@@ -273,7 +280,7 @@ text-align: center;
 font-family: Helvetica;
 font-size: 10px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 150%; /* 15px */
 transition: all .2s ease-in-out !important;
   }
@@ -331,7 +338,7 @@ right: 15px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 15px !important;
   }
   .projectCardCol .card-img-top {
@@ -348,7 +355,7 @@ right: 15px;
 
 #project .addcard{
   width: 100%;
-  height: 385px !important;
+  height: 400px !important;
   background-color: #1D2126 !important;
   border: 1px solid white !important;
   border-radius: 10px !important;
@@ -372,11 +379,16 @@ line-height: 140%; /* 25.2px */
 font-family: Helvetica;
 font-size: 18px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: 140%; /* 25.2px */
 }
 #project .addcard  a {
   text-decoration: none;
   text-align: center;
+}
+
+.card-body p,h4 {
+  padding: 0 !important;
+  margin: 0 !important;
 }
   /*  END PROJECT SECTION */

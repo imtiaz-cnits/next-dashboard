@@ -139,7 +139,7 @@ input:valid ~ label {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
+  height: 18.5px;
   width: 18px;
   /* left: -9px; */
   bottom: 0px;
