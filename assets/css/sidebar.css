@@ -74,7 +74,7 @@ body {
 
 #content {
 	background: var(--contentBG-black) !important;
-	padding: 10px 0 !important;
+	/* padding: 10px 0 !important; */
 	min-height: 100vh !important;
 }
 
@@ -510,11 +510,6 @@ ul {
 	margin: 0 !important;
 }
 
-.btncustomize {
-	width: 50px !important;
-
-}
-
 
 #sidebar .brand svg,
 .bx {
@@ -526,6 +521,9 @@ ul {
 	/* border: 1px solid #ff0000 !important; */
 	overflow: hidden;
 	color: var(--primary-color) !important;
+	border: none !important;
+	width: 50px !important;
+	
 }
 
 .brand span {
@@ -546,10 +544,6 @@ ul {
 	font-weight: 500;
 	line-height: 150%;
 	/* 18px */
-}
-
-.btncustomize {
-	border: none !important;
 }
 
 
@@ -616,3 +610,4 @@ ul {
 .addtextToggle {
 	display: none !important;
 }
+/* customize sidebar button  */

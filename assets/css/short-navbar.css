@@ -147,12 +147,13 @@ margin:2px 10px 0px  10px ;
     .navContentChildTwo {
       margin: 20px 0 0 0 ;
       }
+      #inputParent{ 
+        display: none !important;
+      }
   }
   
   @media screen and (max-width:768px) {
-    #inputParent{ 
-      display: none !important;
-    }
+    
     #magnifireIcon{
       display: inline !important;
     }
