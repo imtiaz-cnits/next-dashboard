@@ -12,11 +12,15 @@ allSideMenu.forEach((item) => {
 });
 
 // TOGGLE SIDEBAR
-const menuBar = document.querySelector("#sidebar .brand .bx.bx-menu");
+const menuBar = document.querySelector("#sidebar .toggleBtn ");
 const sidebar = document.getElementById("sidebar");
+const displayNone = document.querySelector(".displayNone");
 
 menuBar.addEventListener("click", function () {
   sidebar.classList.toggle("hide");
+});
+menuBar.addEventListener("click", function () {
+  displayNone.classList.toggle("hide3");
 });
 
 const searchButton = document.querySelector(
