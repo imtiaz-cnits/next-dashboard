@@ -19,9 +19,6 @@
     box-sizing: border-box;
     font-family: Helvetica;
   }
-/* ########################################## */
-
-/* ########################################## */
 
   /* START PROJECT SECTION  */
 #author{
@@ -256,9 +253,7 @@ line-height: 140%; /* 19.6px */
 }
 
 
-/*  */
-
-
+/* customize scrollbar  */
 
 /* width */
 ::-webkit-scrollbar {
@@ -280,8 +275,10 @@ line-height: 140%; /* 19.6px */
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a3136 ; 
+  background: var(--primary-color) ; 
 }
+
+/* end customize sroll section  */
 
 /* table pdf xl print section working on */
 .containerFortable{

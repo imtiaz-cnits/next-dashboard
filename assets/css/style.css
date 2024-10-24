@@ -868,15 +868,15 @@ margin: 5px 0 0 10px;
 height: 30px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
   .tebleChartColWrapper{
     width: 100% !important;
     overflow-x: scroll !important;
   }
-  .tableParent{
+  /* .tableParent{
     width: 1200px !important;
     overflow-x: scroll;
-  }
+  } */
   .customizeTable{
     width: 1200px !important;
     overflow-x: scroll;
@@ -890,6 +890,7 @@ height: 30px;
     width: 1200px !important;
 }
 }
+
 
 
   /* END TABLE SECTION */
@@ -976,30 +977,30 @@ height: 30px;
 }
   /* end responsive  */
 
-/* start  customize  */
-/* .customizeColWrapper{
-  background: #1D2126;
-  border-radius: 10px;
-  padding: 20px 10px 0 0  ;
   
+/* customize scrollbar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 7px !important;
 }
-.customizeColWrapper2{
-  background: #1D2126;
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(65, 65, 65); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
   border-radius: 10px;
 }
 
-.devolopersColOne{
-  margin: 0 !important;
-  padding: 0 !important;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color) ; 
 }
-.devolopersColTwo{
-  margin: 0 !important;
-  padding: 0 !important;
-} */
 
-/* end   customize  */
-
-
-/* extra css  */
-
-
+/* end customize sroll section  */
